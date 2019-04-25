@@ -37,3 +37,7 @@ $ mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r)-nouveau.img
 $ dracut /boot/initramfs-$(uname -r).img $(uname -r)
 
 reboot
+
+* proceed driver installation using NVIDIA binary
+
+$ systemctl set-default graphical.target
